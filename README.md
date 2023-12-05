@@ -4,6 +4,14 @@
 
 This repo collects the three widely-recognized protocols for using the Morph2 dataset in facial age estimation research. We aim to present precise splits for each protocol to enable researchers to replicate studies and benchmark their results in a consistent and equitable manner.
 
+### RANDOM Protocol
+
+The RANDOM Protocol is widely favored for its straightforward approach: it randomly assigns 80% of the dataset for training purposes and reserves 20% for testing. Despite its popularity, a recurring challenge has been the lack of accessible details on the specific data splits and random seeds used in various studies, which poses obstacles to replicating the results and conducting fair comparisons. To address this issue, our repository adopts the split detailed by [FP-Age](https://github.com/yiminglin-ai/FP-Age), providing researchers with the necessary information to achieve reproducible and comparable outcomes.
+
+### WHOLE Protocol
+
+The WHOLE Protocol uses the entire Morph2 dataset for testing and is particularly useful for evaluating the generalizability of models trained on other datasets. The WHOLE Protocol is also used in the [FP-Age](https://github.com/yiminglin-ai/FP-Age) which trains on the [IMDB-clean](https://github.com/yiminglin-ai/imdb-clean) dataset.
+
 ### AGR Protocol
 
 The AGR Protocol, introduced in the study ["Age Estimation by Multi-scale Convolutional Network,"]((http://www.cbsr.ia.ac.cn/users/dyi/agr.html)) organizes the Morph2 dataset into subsets S1, S2, and S3 according to two guidelines: 1) Balancing the Male-to-Female ratio at 3:1; 2) Equating the White-to-Black ratio.
@@ -24,10 +32,6 @@ In all experiments, the training and testing are repeated in two times: 1) train
 ### DEX Protocol
 
 The DEX Protocol is implemented with a collection of 5,475 photographs featuring individuals aged between 16 to 77 years, all of whom are of **White** ethnicity. To facilitate the research, these photographs are randomly allocated into two groups: 80% (amounting to 4,382 photos) are used for the training set, and the remaining 20% (1,095 photos) constitute the testing set. This distribution model has been adopted in the [DEX](https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/) method and is also referenced in the works of Chang et al. (2011), Chen et al. (2013), Guo et al. (2008), Wang et al. (2015), and Rothe et al. (2016), highlighting its prevalence in the field.
-
-### RANDOM Protocol
-
-The RANDOM Protocol is widely favored for its straightforward approach: it randomly assigns 80% of the dataset for training purposes and reserves 20% for testing. Despite its popularity, a recurring challenge has been the lack of accessible details on the specific data splits and random seeds used in various studies, which poses obstacles to replicating the results and conducting fair comparisons. To address this issue, our repository adopts the split detailed by [FP-Age](https://github.com/yiminglin-ai/FP-Age), providing researchers with the necessary information to achieve reproducible and comparable outcomes.
 
 ## Reference
 
